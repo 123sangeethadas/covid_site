@@ -23,8 +23,8 @@
 
 <body id="body">
     <!--navbar-->
-    <div class="wrapper " role="banner">
-        <nav id="nav" class="navbar navbar-expand-xl  navbar-secondary navcls fs-5 navbar-light ">
+    <div class="wrapper " >
+        <nav id="nav" class="navbar navbar-expand-xl   navcls fs-5  ">
             <div class="container ">
                 <b>
                     <a href="#" class="navbar-brand col-6 col-xl-12 ">
@@ -258,7 +258,7 @@
     <!--icons part-->
     <div class="container pb-5  d-flex flex-column">
         <div class="row">
-            <div class="col-lg-3">
+            <div class="col-lg-3 mb-3">
                 <div class="align-items-center d-flex symbol">
                     <div class="me-3 ">
                         <span>
@@ -272,7 +272,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 mb-3">
                 <div class="align-items-center d-flex symbol  ">
                     <div class="me-3 ">
                         <span>
@@ -287,7 +287,7 @@
 
 
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 mb-3">
                 <div class="align-items-center d-flex symbol  ">
                     <div class="me-3 ">
                         <span>
@@ -301,7 +301,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3">
+            <div class="col-lg-3 mb-3">
                 <div class="align-items-center d-flex symbol ">
                     <div class="me-3 ">
                         <span>
@@ -737,12 +737,23 @@
                 }
 
                 else {
-                    $(".navbar").css("background", " #f0f0f0");
+                    $(".navbar").css("background", "  #F7F7FBB3");
                     $(".navbar").css("box-shadow", "none");
                 }
             })
         })
-    
+    </script>
+    <script>
+         $(document).ready(function () {
+            $('.toggle_icon').click(function(){
+                $('.sidenav').css("display","block");
+            })
+           
+                
+         })
+
+
+    </script>
 
 
    
@@ -769,7 +780,7 @@
                function openNav(){
                 
           document.getElementById("mySidenav").style.width = "300px";
-           document.getElementById("body").style.boxShadow = " gray";
+           
         }
             
         </script>
@@ -798,14 +809,7 @@
            
         });
       </script>
-     
-   
     
-    
-
-
-
-
-</body>
+     </body>
 
 </html>

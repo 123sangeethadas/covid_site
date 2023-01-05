@@ -8,7 +8,7 @@ body {
   position: fixed;
   width: 100%;
   z-index: 100;
-  height: 68.2px;
+  background-color: rgba(111, 66, 193, 0.16) !important;
 }
 
 .bgcolor {
@@ -535,6 +535,7 @@ strong {
   overflow-x: hidden;
   transition: 0.5s;
   padding-top: 60px;
+  display: none;
 }
 
 .sidenav ul {
@@ -643,18 +644,35 @@ strong {
   display: none;
 }
 
+.togglespan {
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.icon {
+  font-size: 20px;
+}
+
 @media (min-width: 320px) and (max-width: 992px) {
   .main-heading {
     font-size: 30px;
   }
   .firstpart {
     text-align: center;
+    border-bottom-right-radius: 35%;
+  }
+  .firstpart .container {
+    margin-bottom: -23px;
   }
   .illustration {
-    margin-top: -128px;
+    margin-top: -81px;
   }
   .section-heading {
     font-size: 24px;
+  }
+  .statistics {
+    padding: 45px 0;
   }
 }
 @media (min-width: 1200px) {
